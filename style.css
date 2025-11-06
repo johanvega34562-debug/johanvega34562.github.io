@@ -1,0 +1,113 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Encabezado */
+header {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #e63946;
+}
+
+header h1 {
+    margin: 0;
+    color: #e63946;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* Secciones */
+.seccion {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+h2 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Lista de bandas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #222;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #e63946;
+    font-size: 0.9em;
+}
+
+/* 🔹 Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .seccion {
+        padding: 25px 5%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
